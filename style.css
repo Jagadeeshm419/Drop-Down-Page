@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(DropDownbg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+/* Menu Bar */
+.menubar{
+    text-align: center;
+    background-color: rgb(255, 236, 210);
+}
+
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menubar ul li{
+    padding: 15px;
+    margin: 15px;
+    width: 120px;
+}
+
+.menubar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.active, .menubar ul li:hover{
+    background-color: rgb(234, 177, 98);
+    border-radius: 3px;
+}
+
+/* Sub Menu-1 */
+.submenu-1{
+    display:none;
+}
+
+.menubar ul li:hover .submenu-1 {
+    display:block;
+    position:absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color: rgb(255, 236, 210);
+}
+
+.menubar ul li:hover .submenu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px double black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menubar ul li:hover .submenu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menubar ul li:hover .submenu-1 ul li a:hover{
+    color: rgb(234, 177, 98);
+}
+
+
+/* Arrow Symbol On Right Side */
+.fa-angle-right{
+    float: right;
+}
+
+/* Sub Menu-2 */
+.submenu-2{
+    display: none;
+}
+
+.hover1:hover .submenu-2{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgb(255, 236, 210)
+}
